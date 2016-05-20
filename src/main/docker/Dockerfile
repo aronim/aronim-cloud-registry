@@ -1,4 +1,4 @@
-FROM hub.kungfudev.io/java:7
+FROM hub.aronim.com/java:7
 
 VOLUME /tmp
 
@@ -9,5 +9,5 @@ RUN bash -c 'touch /data/app.jar'
 ENTRYPOINT exec java \
     -Xmx64m -Xms64m -XX:MaxPermSize=64m \
     -Djava.security.egd=file:/dev/./urandom \
-    -Dspring.cloud.config.uri=http://kdc-configuration.marathon.mesos:8888 \
+    -Dspring.cloud.config.uri=http://ac-configuration.marathon.mesos:8888 \
     -jar /data/app.jar

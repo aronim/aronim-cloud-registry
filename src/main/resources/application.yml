@@ -1,6 +1,6 @@
 spring:
   application:
-    name: kdc-registry
+    name: aronim-cloud-registry
 
 server:
   port: 8761

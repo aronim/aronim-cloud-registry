@@ -20,7 +20,7 @@ apply plugin: "spring-boot"
 
 // Properties
 
-group = "com.kungfudev.cloud"
+group = "com.aronim.cloud"
 version = "1.0-SNAPSHOT"
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
