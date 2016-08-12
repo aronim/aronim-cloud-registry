@@ -18,17 +18,19 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 @EnableEurekaServer
 @SpringBootApplication
 @EnableAutoConfiguration
-public class RegistryApplication {
-
-    public static void main(String[] args) {
+public class RegistryApplication
+{
+    public static void main(String[] args)
+    {
         SpringApplication.run(RegistryApplication.class);
     }
 
     @Configuration
-    protected static class SpringWebMvcConfiguration extends WebMvcConfigurerAdapter {
-
+    protected static class SpringWebMvcConfiguration extends WebMvcConfigurerAdapter
+    {
         @Override
-        public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        public void addResourceHandlers(ResourceHandlerRegistry registry)
+        {
             registry.addResourceHandler("/resources/**").addResourceLocations("classpath:/META-INF/resources/");
         }
     }
